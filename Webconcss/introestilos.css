@@ -1,0 +1,23 @@
+.colores {
+  color: red;
+}
+.fondo {
+  background-color: azure;
+  background-image: url();
+  background-position: left center;
+}
+.anchura {
+  width: 100px;
+  background-color: green;
+}
+.altura {
+  height: 100px;
+  background-color: aqua;
+}
+.tarjeta {
+  border-style: solid;
+  border-color: brown;
+  border-width: 1px;
+  padding: 10px;
+  margin: 20px;
+}
