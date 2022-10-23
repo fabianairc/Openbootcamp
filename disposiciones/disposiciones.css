@@ -1,0 +1,14 @@
+.img {
+  width: 50px;
+} /*por defecto display inline block: permite trabajar con tamaños*/
+span {
+  background-color: aquamarine;
+
+  float: right;
+} /*por defecto display inline*/
+.div-1 {
+  background-color: red;
+}
+.div-2 {
+  background-color: azure;
+} /*por defecto display block*/

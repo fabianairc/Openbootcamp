@@ -1,0 +1,35 @@
+div {
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  padding: 5px;
+  margin: 5px;
+}
+/*se posiciona en relacion al posicionamiento original*/
+.relative {
+  position: relative;
+  left: 80px;
+}
+.fixed {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  background-color: greenyellow;
+}
+.absolute {
+  /*se posiciona respecto del div padre*/
+  position: absolute;
+  top: 30px;
+  background-color: blue;
+}
+.divrelative {
+  position: relative;
+  width: 800px;
+  height: 800px;
+}
+.sticky {
+  /*al hacer scroll modifica su posicion, mezcla relative con fixed*/
+  background-color: aqua;
+  position: sticky;
+  top: 0px;
+}

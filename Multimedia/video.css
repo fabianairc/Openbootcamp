@@ -1,0 +1,19 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+.video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+}
+.header {
+  position: relative;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100vh;
+}
