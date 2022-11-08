@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="ejercicioform.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>Registrate en los formularios</h3>
+      <div class="buttons">
+        <button type="google-btn" class="google-btn">
+          <picture>
+            <img
+              src="https://entredichos.trabajosocial.unlp.edu.ar/wp-content/uploads/sites/6/2016/12/Google_-G-_Logo.svg_.png"
+              alt="logo-google"
+            />
+          </picture>
+          <span>Registrate con Google</span>
+        </button>
+        <button class="twitter-btn"><span>T</span></button>
+      </div>
+      <div class="separator">
+        <h3><span>O...</span></h3>
+      </div>
+      <form action="">
+        <div class="section-inputs">
+          <label for="name"><span>Name</span></label>
+          <input type="text" id="name" name="name" />
+          <label for="username"><span>Username</span></label>
+          <input type="text" id="username" name="username" />
+        </div>
+        <label for="email"><span>email</span></label>
+        <input type="text" id="email" name="email" />
+        <label for="password"><span>password</span></label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="6+ caracteres..."
+        />
+        <label for="checkbox" class="checkbox-label">
+          <input type="checkbox" id="checkbox" />
+          <span>Acepto las condiciones y el aviso legal</span>
+        </label>
+        <button type="submit" class="submit-btn">Crear Cuenta</button>
+      </form>
+    </div>
+  </body>
+</html>
