@@ -1,0 +1,7 @@
+:root {
+  --color-principal: rgb(255, 8, 0);
+  --ancho-principal: 250px;
+}
+p {
+  color: var(--color-principal);
+}

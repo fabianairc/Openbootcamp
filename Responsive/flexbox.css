@@ -1,0 +1,17 @@
+.contenedor {
+  display: flex;
+  gap: 0.5rem;
+  background-color: yellow;
+  padding: 0.5rem;
+  min-height: 5rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item {
+  background-color: salmon;
+  padding: 0.25rem;
+}
+.item-2 {
+  align-self: stretch;
+}
