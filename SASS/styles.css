@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  background-color: lightblue;
+  min-height: 100vh;
+  padding: 0.5rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: grey;
+  width: 50rem;
+}
+
+p {
+  color: grey;
+  width: 50rem;
+}/*# sourceMappingURL=styles.css.map */

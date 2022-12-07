@@ -1,0 +1,22 @@
+$text-color: grey;
+@mixin formato-texto {
+  color: grey;
+  width: 50rem;
+}
+
+.container {
+  width: 100%;
+  background-color: lightblue;
+  min-height: 100vh;
+  padding: 0.5rem;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  @include formato-texto();
+}
+p {
+  @include formato-texto();
+}
