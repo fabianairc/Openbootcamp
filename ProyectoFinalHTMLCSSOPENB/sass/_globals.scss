@@ -1,5 +1,11 @@
 @use "components";
 $color-main: #0075ff;
+@mixin section-display {
+  width: 100%;
+  max-width: 992px;
+  margin: auto;
+  padding: 3rem;
+}
 
 .body {
   padding: 0;
@@ -21,10 +27,8 @@ $color-main: #0075ff;
 
 .sec-home {
   display: flex;
-  width: 100%;
-  max-width: 768px;
-  margin: auto;
-  padding: 5rem;
+  align-items: center;
+  @include section-display();
   .home-cta {
     flex: 1;
     .cta-text {
@@ -36,6 +40,82 @@ $color-main: #0075ff;
     }
     .home-description {
       width: 20rem;
+    }
+  }
+}
+
+.sec-features {
+  display: flex;
+  flex-direction: column;
+  @include section-display();
+  .intro {
+    text-align: center;
+    h3 {
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 0.8rem;
+      color: #888;
+    }
+  }
+  .features {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 0;
+      flex: 1;
+
+      .featur {
+        display: flex;
+        align-items: baseline;
+        .description {
+          margin-left: 1rem;
+          max-width: 30rem;
+          .title {
+            font-size: 1.25rem;
+          }
+          .description-text {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    .image {
+      max-width: 20rem;
+    }
+  }
+}
+
+.sec-benefits {
+  border-top: solid 1px #ccc;
+
+  @extend .sec-features, .intro;
+}
+
+.benefits-cards {
+  width: 100%;
+  padding: 0 2rem 2rem;
+}
+.sec-kpis {
+  background-color: $color-main;
+  color: white;
+  padding: 4rem;
+  width: 100%;
+  .kpi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .number {
+      font-size: 4rem;
+      font-weight: 600;
+    }
+    .desc {
+      font-size: 0.9rem;
+      color: #ffffffaa;
     }
   }
 }

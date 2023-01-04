@@ -49,8 +49,8 @@
 .icon-sm i {
   color: #0075ff;
   border-radius: 50%;
-  font-size: 0.75rem;
-  padding: 0.1rem 0.25rem;
+  font-size: 1.25rem;
+  padding: 0.2rem 0.35rem;
   border: 1px solid black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2509803922);
 }
@@ -89,7 +89,7 @@
 .icon-desc .icon {
   padding: 0;
   color: #0075ff;
-  font-size: 10rem;
+  font-size: 7.5rem;
 }
 .icon-desc .title {
   font-size: 1.5rem;
@@ -117,10 +117,11 @@
 
 .sec-home {
   display: flex;
+  align-items: center;
   width: 100%;
-  max-width: 768px;
+  max-width: 992px;
   margin: auto;
-  padding: 5rem;
+  padding: 3rem;
 }
 .sec-home .home-cta {
   flex: 1;
@@ -134,6 +135,82 @@
 }
 .sec-home .home-cta .home-description {
   width: 20rem;
+}
+
+.sec-features, .sec-benefits {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 992px;
+  margin: auto;
+  padding: 3rem;
+}
+.sec-features .intro, .sec-features .sec-benefits, .sec-benefits .intro, .sec-benefits .sec-benefits {
+  text-align: center;
+}
+.sec-features .intro h3, .sec-features .sec-benefits h3, .sec-benefits .intro h3, .sec-benefits .sec-benefits h3 {
+  font-size: 1.8rem;
+}
+.sec-features .intro p, .sec-features .sec-benefits p, .sec-benefits .intro p, .sec-benefits .sec-benefits p {
+  font-size: 0.8rem;
+  color: #888;
+}
+.sec-features .features, .sec-benefits .features {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.sec-features .features .text, .sec-benefits .features .text {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  flex: 1;
+}
+.sec-features .features .text .featur, .sec-benefits .features .text .featur {
+  display: flex;
+  align-items: baseline;
+}
+.sec-features .features .text .featur .description, .sec-benefits .features .text .featur .description {
+  margin-left: 1rem;
+  max-width: 30rem;
+}
+.sec-features .features .text .featur .description .title, .sec-benefits .features .text .featur .description .title {
+  font-size: 1.25rem;
+}
+.sec-features .features .text .featur .description .description-text, .sec-benefits .features .text .featur .description .description-text {
+  font-size: 1rem;
+}
+.sec-features .features .image, .sec-benefits .features .image {
+  max-width: 20rem;
+}
+
+.sec-benefits {
+  border-top: solid 1px #ccc;
+}
+
+.benefits-cards {
+  width: 100%;
+  padding: 0 2rem 2rem;
+}
+
+.sec-kpis {
+  background-color: #0075ff;
+  color: white;
+  padding: 4rem;
+  width: 100%;
+}
+.sec-kpis .kpi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec-kpis .kpi .number {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.sec-kpis .kpi .desc {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6666666667);
 }
 
 /*# sourceMappingURL=styles.css.map */
